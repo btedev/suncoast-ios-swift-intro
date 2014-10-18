@@ -6,12 +6,13 @@ import UIKit
 
 var pi = 3.14159
 
-var closeEnough: Int = 3.14159
+var closeEnoughPi: Int = 3.14159
 
 var thisManyFingers: Float = 10
 
 var greeting = "Hello World"
 
-var booleansAreEasy = true
+var truthy = true
 
 let a = 4
+

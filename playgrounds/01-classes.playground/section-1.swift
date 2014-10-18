@@ -4,29 +4,33 @@ import UIKit
 
 class FirstClass {
     var a: String
-    let b: String
+    var b: String
     var c: String?
-    
+
     init(a: String, b: String) {
         self.a = a
         self.b = b
     }
-    
+
     func greet() -> String {
-        var aNum = 42
-        var greeting = "\(a) \(b) and the number is \(aNum)"
+        var greeting = ""
+
         if let ending = c {
-            greeting += " \(ending)"
+            greeting = a + " " + b + " " + ending
         } else {
-            greeting += ", and that's it"
+            greeting = a + " " + b
         }
+
         return greeting
     }
 }
 
 var fc = FirstClass(a: "Hello", b: "World")
-fc.a = "What's up"
+fc.greet()
 fc.a
 fc.b
-fc.c = ", how are you?"
+fc.b = "BarCamp"
 fc.greet()
+fc.c = "and that's all folks"
+fc.greet()
+
